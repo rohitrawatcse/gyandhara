@@ -1,0 +1,33 @@
+html {
+    font: 500 100%/1.4 system-ui;
+}
+* {
+    box-sizing: border-box;
+}
+.container {
+    margin: auto;
+    padding: 30px;
+    max-width: 1090px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    grid-column-gap: 45px;
+    grid-row-gap: 47px;
+}
+.card {
+    position: relative;
+    width: 100%;
+}
+.card img {
+    border-radius: 10px;
+    filter: brightness(95%);
+    width: 100%;
+}
+.card h2, .card p {
+    margin: 10px 20px 10px 0;
+}
+@media screen and (max-width: 400px) {
+    body {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        padding: 25px;
+   }
+}
